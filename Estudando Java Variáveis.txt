@@ -1,0 +1,62 @@
+Os dados são armazenados em Váriaveis.
+
+Sintaxe:
+
+<tipo> <nome> = <Valor inicial>;
+    Ex:
+    Int idade = 25;
+    Double Altura = 1.68;
+    char sexo = 'F';
+
+Uma Variável possui:
+    º Nome(ou identificador)
+    º Tipo 
+    º Valor 
+    º Endereço
+
+Tipos primitivos em Java:
+
+Descrição                       | Tipo    | Tamanho | Valores                                     | Valor padrão
+
+--------------------------------|---------|---------|---------------------------------------------|-------------
+
+tipos numéricos inteiros        | byte    | 8 bits  | -128 a 127                                  | 0
+
+tipos numéricos inteiros        | short   | 16 bits | -32768 a 32767                              | 0
+
+tipos numéricos inteiros        | int     | 32 bits | -2147483648 a 2147483647                    | 0
+
+tipos numéricos inteiros        | long    | 64 bits | -9223372036854770000 a 9223372036854770000  | 0L
+
+tipos numéricos com ponto flut. | float   | 32 bits | -1,4024E-37 a 3,4028E+38                    | 0.0f
+
+tipos numéricos com ponto flut. | double  | 64 bits | -4,94E-307 a 1,79E+308                      | 0.0
+
+um caractere Unicode            | char    | 16 bits | '\u0000' a '\uFFFF'                         | '\u0000'
+
+valor verdade                   | boolean | 1 bit   | {false, true}                               | false
+
+
+
+Notas adicionais da imagem:
+
+- String: cadeia de caracteres (palavras ou textos)
+
+- Exemplo Unicode: 'a' = '\u0061'
+
+Ex:
+
+Byte vai ser utilizado para números inteiros do range de -128 a 127 que não vão modificar. Isso serve para os demais de números inteiros.
+
+Nomes das Variáveis e sua Sensibilidade:
+
+Não pode começar com Dígito: user uma Letra ou _
+Não pode ter espaço em branco
+Não usar acentos ou TIL
+Sugestão: use o padrão "camel case"
+
+Ex Correto:
+
+int _5minutos;
+int salario;
+int salarioDoFuncionario;

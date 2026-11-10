@@ -1,0 +1,106 @@
+O java é uma Linguagem de programação (regras sintáticas)
+É uma linguagem tipada, onde ela tem que ser copilada
+para estar realizando seu processo de execução em máquinas.
+
+Precisa configurar um ambiente de prodrução com bibliotes
+em api para conseguir realizar a criação de projetos.
+
+Histórico:
+
+Problemas;
+Por conta do grande acumulo de linguagens de baixo nivel
+elas tinham dificuldades para criação de alguns sistemas
+por que elas precisavam ser configuradas manualmente a
+definição de quais váriaveis são ponteiros e quais são 
+valores e também o gerenciamento de memória.
+
+Problemas com portabilidade ao realizar processo de trans-
+ferência de sistemas de um OS para outro pois isso acabava
+gerando bugs atribundo então erros ao sistema e sem atuali-
+zações de versões não tinha como corrigir.
+
+Aspectos notáveis
+
+º Código Compilado para bytecode e executado em VMs.
+º Roda em vários dispositivos.
+º Domina o mercado a mais de 20 anos.
+º Padrão de android por muitos anos.
+
+Edições:
+
+Java Me - IOT - Dispositivos moveis
+Java SE - desktop e servidores
+Java EE - Aplicações Corporativas
+
+JVM - Java Virtual Machine
+ºMáquina Virtual do Java - Necessário para executar sistemas Java
+
+Complição e Interpretação:
+
+Linguaguens Compuladas: C, C++
+Linguagens Interpretadas: PHP, Javascript
+Linguagens pré-compiladas + máquina virtual: Java, C#
+
+O compilador vai estar distinto para cada modelo de 
+computador ex:
+
+Compilador 1 = Windows - Hardware
+Compilador 2 = MacOs - Hardware
+Compilador 3 = Linux - Hardware
+
+Problemas de portabilidade por conta dos compiladores.
+Elas são muito mais rápidas.
+Sendo mais rápidas por conta de sua leitura ser realizada
+após o sistema já ter sido executado.
+Tem menos tendência a bugs.
+
+Já linguadens interpretadas elas vão estar sendo lidas pelo
+interpretador ex:
+
+Interpretador 1 = Windows - Hardware
+Interpretador 1 = Windows - Hardware
+Interpretador 1 = Windows - Hardware
+
+Ela é feito just in time - Realiza a leitura no momento
+que ela está sendo Executada.
+Mais fácil de realizar portabilidade.
+
+Hibridas -
+
+Vai estar sendo passada primeiro por um compilador depois
+Bytecode onde ele verifica todo o código e depois ele 
+vai rodar em cima de uma máquina virtual EX:
+
+Bytecode - JVM p/ Windows = Windows - Hardware
+Bytecode - JVM p/ MacOs = MacOs - Hardware
+Bytecode - JVM p/ Linux = Linux - Hardware
+
+Ele serve como um modelo hibrido pois tem a parte de compilação
+e a parte de interpretação.
+
+Estrutura de uma aplicação java
+
+Como ele é uma linguagem orientada a objetos
+Todo o código em java precisa estar contindo em Class.
+
+Package = Agrupamento lógico de Classes relacionadas.
+EX:
+
+Entities está contendo as Class que foram criadas para o mesmo.
+Services está em outro pacote serviço de log, pedidos e etc...
+Repositories Classes para acessar os dados.
+
+Módulo (Java9+) = Agrupamento lógico de pacotes relacionados
+Runtime = Agrupamento Físico
+Ex:
+
+        financial - Modulo  
+|   |   |   |   |   |   |
+|        Entities       | - Agrupamento
+|            |          |
+|          Class        | - Classes
+|                       |
+|                       |
+|   |   |   |   |   |   |        
+
+Aplicação = Agrupamento de módulo relacionados

@@ -1,0 +1,26 @@
+Sem quebra de linha ao final:
+
+System.out.print("Bom dia!");
+
+Com quebra de linha ao final:
+
+System.out.println("Bom dia!");
+
+Caso eu queria escrever um conteúdo de uma variável:
+
+int y = 32;
+float x = 10.35784;
+
+System.out.println(y); //Saída: 32
+Systen.out.println(x); //Saída: 10.35784
+
+Caso eu queria controlar as casas decimais:
+
+System.out.printf("%.2f%n", x); // Saída: 10,36 %n = Quebra de linha e o %.2f = 2 Casas decimais e ainda arredondou o número.
+System.out.printf("%.4f%n", x); // Saída: 10,3578 Ele está puxando a (,) por conta do identificador de indioma que coloca o do computador,
+ caso eu queria que seja o . devo mudar para o US.
+
+import java.util.Locale; // Fora da Class.
+Locale.setDefault(Locale.US); // Dentro da Class.
+
+System.out.println("RESULTADO = " + x + " METROS"); //saída: RESULTADO = 10.35784 METROS
